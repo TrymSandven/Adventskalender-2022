@@ -9,7 +9,7 @@ def kalorier():
     tre_liste = []
     
     try:
-        fila=open('input.txt')
+        fila=open('./Dag1/Del2/input.txt')
     except:
         print('Kan ikkje opna filen')
 

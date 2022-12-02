@@ -6,7 +6,7 @@ def steinSaksPapir():
     total = 0
     
     try:
-        fila=open('input.txt')
+        fila=open('./Dag2/Del2/input.txt')
     except:
         print('Kan ikkje opna filen')
 

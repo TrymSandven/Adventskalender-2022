@@ -8,7 +8,7 @@ def kalorier():
     liste = []
     
     #try:
-    fila=open('/Dag 1/Del 1/input.txt')
+    fila=open('./Dag1/Del1/input.txt')
     #except:
     print('Kan ikkje opna filen')
 
