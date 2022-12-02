@@ -2,7 +2,6 @@ import os
 import os.path
 
 def steinSaksPapir():
-    alver = ['A', 'B', 'C']
     meg = {'X':1, 'Y':2, 'Z':3}
     total = 0
     
