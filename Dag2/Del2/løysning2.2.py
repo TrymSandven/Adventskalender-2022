@@ -4,12 +4,14 @@ import os.path
 def steinSaksPapir():
     rps = {'A':1, 'B':2, 'C':3}
     total = 0
-    
+
+#Leser inn fila     
     try:
         fila=open('./Dag2/Del2/input.txt')
     except:
         print('Kan ikkje opna filen')
 
+#Finner ut om ein skal vinne, tape eller uavgjort. Finner og ut kva som må velgast for å få det til. Sikkert bedre måta å gjera da på. 
     for linje in fila:
         if linje[-2] == 'Y':
             total += 3

@@ -7,7 +7,8 @@ def kalorier():
     sumering = 0
     max_liste = []
     tre_liste = []
-    
+
+#Leser inn fila     
     try:
         fila=open('./Dag1/Del2/input.txt')
     except:

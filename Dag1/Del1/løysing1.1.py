@@ -6,11 +6,12 @@ def kalorier():
     t0 = time.time()
     sumering = 0
     liste = []
-    
-    #try:
-    fila=open('./Dag1/Del1/input.txt')
-    #except:
-    print('Kan ikkje opna filen')
+
+#Leser inn fila      
+    try:
+        fila=open('./Dag1/Del1/input.txt')
+    except:
+        print('Kan ikkje opna filen')
 
 
     for tall in fila:
