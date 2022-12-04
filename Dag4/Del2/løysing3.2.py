@@ -9,7 +9,7 @@ def pakke_sort():
 
 #Leser inn fila      
     try:
-        fila=open('./Dag4/Del1/input.txt')
+        fila=open('./Dag4/Del2/input.txt')
     except:
         print('Kan ikkje opna filen')
  
@@ -26,7 +26,6 @@ def pakke_sort():
         
         #Finner felles bokstav i dei to tekststrengene
         common_characters = ''.join(set(del1).intersection(del2))
-        print(common_characters)
         total += verdi[common_characters]
     print(total)
 
