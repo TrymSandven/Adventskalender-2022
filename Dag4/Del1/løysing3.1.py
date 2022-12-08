@@ -30,7 +30,4 @@ def pakke_sort():
         total += verdi[common_characters]
     print(total)
 
-
-
-
 pakke_sort()
