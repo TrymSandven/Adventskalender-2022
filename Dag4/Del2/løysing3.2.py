@@ -6,6 +6,7 @@ import string
 def pakke_sort():
     verdi = dict()
     total = 0
+    liste = []
 
 #Leser inn fila      
     try:
@@ -16,16 +17,22 @@ def pakke_sort():
     #Tildeler ein verdi til bokstaver a-Z frå 1-52 
     for index, letter in enumerate(string.ascii_letters):
         verdi[letter] = index + 1
-    
-    
 
-    #Deler opp linja i to like deler
+#Legger heile tekstfila i ei liste og legger 3 og 3 inn i ei subliste
     for line in fila:
-        del1 = line[:len(line)//2]
-        del2 = line[len(line)//2:]
+        line = line.strip()
+        liste.append(line)
+    liste = [liste[i:i+3] for i in range(0,len(liste),3)]
         
-        #Finner felles bokstav i dei to tekststrengene
+    #Tilldeler kvart element i sublistene sin eigen variabel
+    for i in range(0, 100):
+        del1 = set(liste[i][0])
+        del2 = set(liste[i][1])
+        del3 = set(liste[i][2])
+        
+        #Finner felles bokstav i del1 og del2, deretter i del3
         common_characters = ''.join(set(del1).intersection(del2))
+        common_characters = ''.join(set(common_characters).intersection(del3))
         total += verdi[common_characters]
     print(total)
 
