@@ -1,6 +1,4 @@
-import os
 import os.path
-import time
 import string
 
 def pakke_sort():

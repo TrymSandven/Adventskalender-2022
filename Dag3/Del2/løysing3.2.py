@@ -1,6 +1,4 @@
-import os
 import os.path
-import time
 import string
 
 def pakke_sort():
@@ -25,7 +23,7 @@ def pakke_sort():
     liste = [liste[i:i+3] for i in range(0,len(liste),3)]
         
     #Tilldeler kvart element i sublistene sin eigen variabel
-    for i in range(0, 100):
+    for i in range(len(liste)):
         del1 = set(liste[i][0])
         del2 = set(liste[i][1])
         del3 = set(liste[i][2])
