@@ -1,7 +1,9 @@
 import os.path
 import string
+import time
 
 def pakke_sort():
+    t0 = time.time()
     verdi = dict()
     total = 0
     liste = []
@@ -32,7 +34,8 @@ def pakke_sort():
         common_characters = ''.join(set(del1).intersection(del2))
         common_characters = ''.join(set(common_characters).intersection(del3))
         total += verdi[common_characters]
-    print(total)
+    t1 = time.time()
+    print(total, 'Runtime:', str(round(t1-t0, 3))+'sec')
 
 
 
